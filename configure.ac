@@ -1357,7 +1357,7 @@ AC_COMPILE_IFELSE([AC_LANG_PROGRAM([[
         [AC_MSG_RESULT([yes, GCC-style])
          HAVE_CXX11=1],
             [AC_MSG_RESULT([no])
-             CXXFLAGS="$my_CXXFLAGS"
+             CXXFLAGS="$my_CXXFLAGS -std=c++0x"
              HAVE_CXX11=0])])
 AC_LANG_POP([C++])
 
